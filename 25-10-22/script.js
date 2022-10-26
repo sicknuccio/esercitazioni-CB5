@@ -13,7 +13,7 @@ secondValue = prompt("Inserisci secondo valore:");
 secondValue = parseFloat(secondValue);
 
 
- //--------OPERAZIONI--------
+ //--------OPERAZIONI---------
 
  switch (inputOperation) {
 
