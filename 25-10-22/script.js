@@ -2,7 +2,7 @@
 
 let inputOperation, firstValue, secondValue;
 
-//--------INPUT--------
+//--------INPUT-------
 
 alert("Operazioni matematica: 1=Somma,2=Sottrazione,3=Moltiplicazione,4=Divisione,5=Modulo");
 inputOperation = prompt("Inserisci valore:");
