@@ -1,0 +1,47 @@
+.most-popular,
+.best-seller {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: black 2px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 560px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+.card h1,
+.card p {
+  padding: 6px 16px;
+}
+
+.card img {
+  width: 100px;
+  align-self: center;
+}
+
+.special-card {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
