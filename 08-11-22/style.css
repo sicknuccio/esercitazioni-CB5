@@ -1,0 +1,65 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(214, 213, 219),
+    rgb(238, 238, 189)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+}
+h1 {
+  letter-spacing: 3px;
+}
+
+img {
+  width: 50px;
+  height: 60px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.card {
+  background-color: #eee;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 100px;
+  height: auto;
+}
+
+.card .img {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+}
+
+/* electric: '#FCF7DE',
+water: '#DEF3FD',
+ground: '#f4e7da',
+rock: '#d5d5d4',
+fairy: '#fceaff',
+poison: '#98d7a5',
+bug: '#f8d5a3',
+dragon: '#97b3e6',
+psychic: '#eaeda1',
+flying: '#F5F5F5',
+fighting: '#E6E0D4',
+normal: '#F5F5F5',
+fire: #FDDFDF,
+grass: #DEFDE0
+ghost: #705898,
+ice: #98d8d8; */
