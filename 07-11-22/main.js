@@ -1,7 +1,7 @@
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((res) => res.json())
   .then((users) =>
-    users.map((x) =>
+    users.forEach((x) =>
       console.log(
         "Name:",
         x.name,
@@ -9,8 +9,19 @@ fetch("https://jsonplaceholder.typicode.com/users")
         "Street:",
         x.address.street,
         "\n",
+        "Suite:",
+        x.address.suite,
+        "\n",
         "City:",
-        x.address.city
+        x.address.city,
+        "\n",
+        "Zipcode:",
+        x.address.zipcode,
+        "\n",
+        "Lat:",
+        x.address.geo.lat,
+        "Lng:",
+        x.address.geo.lng
       )
     )
   )
@@ -19,7 +30,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
 fetch("https://jsonplaceholder.typicode.com/todos")
   .then((res) => res.json())
   .then((todos) =>
-    todos.map((x) =>
+    todos.forEach((x) =>
       console.log("User Id:", x.userId, "ID:", x.id, "Title:", x.title)
     )
   )

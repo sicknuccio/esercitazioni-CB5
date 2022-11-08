@@ -1,15 +1,15 @@
 body{
-        transition: 0.4s;
+    transition: 0.4s;
 }
 .card{
     justify-content: start;
     display: flex;
     flex-direction: row;
-    text-align: center; 
     width: auto;
     height: auto;
     text-align: center;
-    
+    box-shadow: 0 15px 25px rgba(143, 124, 236 , 0.7);
+    border-radius: 10px;
 }
 
 .card h1{
@@ -31,19 +31,18 @@ body{
     border-radius: 20%;    
 }
 
-
 .card p{
     justify-content: center;
     font-style: italic;
     margin-top: 10px;
     margin-left: 40px ;
+    max-width: fit-content;
  
 }
 
 .hero{
     border: 1px solid;
     padding-bottom: 3vh;
-    
     border-radius: 5px;
 }
 
@@ -53,19 +52,18 @@ body{
     transition: 0.4s;
 }
 
-
-
 .loginBox{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
+    display: flex;
+    flex-direction: column;  
+    position: relative; 
+    width: 200px;
     padding: 40px;
-    transform: translate(-50%, -50%);
+    margin-left: 5vh;
     background: #242026;
     box-shadow: 0 15px 25px rgba(143, 124, 236 , 0.7);
     border-radius: 10px;
 }
+
 .loginBox h2{
     margin: 0 0 30px;
     padding: 0;
@@ -117,6 +115,7 @@ body{
     border: 1px solid #8F7CEC;
     margin: auto;
 }
+
 #submit:hover{
     background: #8F7CEC;
     color: white;

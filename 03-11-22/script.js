@@ -1,5 +1,7 @@
 import characters from "./object.js";
 
+
+
 const bodyEl = document.body;
 //CREAZIONE HERO
 const heroEl = document.createElement("div");
@@ -9,7 +11,6 @@ heroEl.textContent = "TO DO LIST:ANIMAZIONE SUL PUNTATORE SULL'IMMAGINE,CONTINUA
 const buttonEl = document.createElement("button");
 buttonEl.textContent ="Dark Mode";
 bodyEl.append(heroEl,buttonEl);
-
 
 //FUNZIONE PER CRARE LE CARD
 const createCard =(data) =>{
@@ -21,7 +22,7 @@ const createCard =(data) =>{
     cardTitleEl.textContent = data.name;
     
     const cardImgEl = document.createElement("img");
-    cardImgEl.setAttribute("src", data.image );
+    cardImgEl.setAttribute("src", data.image) || "pippo";
     cardImgEl.setAttribute("alt",data.name)
     
     const cardParEl = document.createElement("p");
@@ -37,24 +38,8 @@ characters.map((character) => createCard(character));
 //CREAZIONE DARKMODE TRAMITE BOTTONE
 buttonEl.addEventListener("click", () => bodyEl.classList.toggle("darkmode"));
 
-//CREAZIONE BOX PER LOGIN WORK IN PROGRESS
+//FILTRARE OGGETTI - CREARE FUNZIONE PER FLITRARE
 
-// const boxLogEl = document.createElement("div");
-// boxLogEl.className = "loginBox";
-// const boxTitle = document.createElement("h2");
-// const boxForm = document.createElement("form");
-
-//FILTRARE OGGETTI  
-
-
-characters
-.filter((character) => character.name == "Goku" )
-.map((character)=>{
-    createCard(
-        character.name,
-        character.image,
-        character.description,
-    )
-});
-
-
+// characters.map((character) =>{ if(character.name )
+// createCard(character)
+// });
