@@ -1,0 +1,65 @@
+:root {
+  --color-button: rgb(83, 255, 172);
+  --color-container: rgba(49, 58, 73, 0.651);
+  --color-body: rgb(30, 36, 48);
+  --color-text: rgb(184, 202, 210);
+}
+body {
+  background-color: var(--color-body);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h2 {
+  color: var(--color-text);
+  text-align: center;
+}
+h5 {
+  color: var(--color-button);
+}
+.container {
+  background-color: var(--color-container);
+  padding: 10px;
+  /* margin-top: 80px;
+  margin-right: 20px;
+  margin-left: 20px; */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-container);
+  border-radius: 10px;
+  max-width: 350px;
+}
+.container img {
+  scale: 0.8;
+  width: 100%;
+  padding-bottom: calc(20% - 20px);
+}
+
+#btn-generator {
+  background-color: var(--color-button);
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 0px;
+  position: absolute;
+  top: calc(100% - 20px);
+  left: calc(50% - 20px);
+  box-shadow: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn-generator img {
+  scale: 0.7;
+}
+
+#btn-generator :hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px var(--color-button), 0 0 25px var(--color-button),
+    0 0 50px var(--color-button), 0 0 100px var(--color-button);
+  transition: 0.5s;
+}
