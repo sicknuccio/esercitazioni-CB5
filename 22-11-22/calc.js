@@ -16,7 +16,7 @@ module.exports = {
     return res;
   },
 
-  dev: function (...args) {
+  div: function (...args) {
     let res = args[0];
     for (let i = 1; i < args.length; i++) res /= parseInt(args[i]);
     return res;
