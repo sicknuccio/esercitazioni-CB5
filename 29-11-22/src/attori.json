@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "nome": "Robert",
+    "cognome": "Downey",
+    "data_nascita": "04/04/1965",
+    "riconoscimenti": "",
+    "inizio_attivita": "01/03/1985",
+    "fine_attivita": "",
+    "in_attivita": true
+  },
+  {
+    "id": 2,
+    "nome": "Chris",
+    "cognome": "Evans",
+    "data_nascita": "13/06/1981",
+    "riconoscimenti": "",
+    "inizio_attivita": "01/03/1990",
+    "fine_attivita": "",
+    "in_attivita": true
+  },
+  {
+    "id": 3,
+    "nome": "Christopher ",
+    "cognome": "Hemsworth ",
+    "data_nascita": "11/08/1983",
+    "riconoscimenti": "",
+    "inizio_attivita": "01/03/1995",
+    "fine_attivita": "",
+    "in_attivita": true
+  },
+  {
+    "id": 4,
+    "nome": "Jeremy  ",
+    "cognome": "Lee Renner ",
+    "data_nascita": "07/01/1971",
+    "riconoscimenti": "",
+    "inizio_attivita": "01/03/1990",
+    "fine_attivita": "",
+    "in_attivita": true
+  },
+  {
+    "id": 5,
+    "nome": "Tiziano",
+    "cognome": "Nicosia",
+    "data_nascita": "",
+    "riconoscimenti": "",
+    "inizio_attivita": "",
+    "fine_attivita": "",
+    "in_attivita": ""
+  }
+]
