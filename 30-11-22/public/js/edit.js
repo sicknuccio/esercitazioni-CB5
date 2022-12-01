@@ -81,20 +81,19 @@ const createCard = (actor) => {
    * Eventi bottoni card
    */
 
-  let upActor = {
-    id: actor.id,
-    nome: nameEl.value == "" ? actor.nome : nameEl.value,
-    cognome: surnameEl.value == "" ? actor.cognome : surnameEl.value,
-    data_nascita:
-      data_nascitaEl.value == "" ? actor.data_nascita : data_nascitaEl.value,
-    // riconoscimenti: riconoscimentiEl.value,
-    // inizio_attivita: inizio_attivitaEl.value,
-    // fine_attivita: fine_attivitaEl.value,
-    // in_attivita: in_attivitaEl.value,
-  };
-
   saveEl.addEventListener("click", (e) => {
     e.preventDefault();
+    let upActor = {
+      id: actor.id,
+      nome: nameEl.value == "" ? actor.nome : nameEl.value,
+      cognome: surnameEl.value == "" ? actor.cognome : surnameEl.value,
+      data_nascita:
+        data_nascitaEl.value == "" ? actor.data_nascita : data_nascitaEl.value,
+      // riconoscimenti: riconoscimentiEl.value,
+      // inizio_attivita: inizio_attivitaEl.value,
+      // fine_attivita: fine_attivitaEl.value,
+      // in_attivita: in_attivitaEl.value,
+    };
     console.log(
       PUT(upActor).then((res) => {
         console.log(res);
