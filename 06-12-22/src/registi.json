@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nome": "Regista 11",
+    "cognome": "Toz",
+    "data_nascita": "1",
+    "riconoscimenti": "",
+    "inizio_attivita": "",
+    "fine_attivita": "",
+    "in_attivita": ""
+  },
+  {
+    "id": 3,
+    "nome": "Regista 3",
+    "cognome": "Giard",
+    "data_nascita": "",
+    "riconoscimenti": "",
+    "inizio_attivita": "",
+    "fine_attivita": "",
+    "in_attivita": ""
+  }
+]
