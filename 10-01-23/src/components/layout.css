@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+.number {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.number h1 {
+  color: white;
+}
+li {
+  list-style: none;
+  color: rebeccapurple;
+  font-size: 50px;
+}
