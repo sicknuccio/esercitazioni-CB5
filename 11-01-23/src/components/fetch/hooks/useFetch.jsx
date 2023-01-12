@@ -27,5 +27,5 @@ export function useFetch(url) {
     fetchData(url);
   }, []);
 
-  return { data, loading, refetch: fetchData };
+  return { data, loading, error, refetch: fetchData };
 }

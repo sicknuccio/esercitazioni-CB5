@@ -1,8 +1,14 @@
 import { ENDPOINT } from "../fetch/constants/constants";
 import { useFetch } from "../fetch/hooks/useFetch";
 
-export function Users(props) {
-  const { data: user, loading, refetch: newUser } = useFetch(ENDPOINT.USERS);
+export function Users() {
+  const {
+    data: user,
+    loading,
+    error,
+    refetch: newUser,
+  } = useFetch(ENDPOINT.USERS);
+  if (error) return error;
   if (loading) return "Caricamento...";
   return (
     <div>

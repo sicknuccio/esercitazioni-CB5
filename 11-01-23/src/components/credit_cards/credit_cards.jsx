@@ -1,12 +1,14 @@
 import { ENDPOINT } from "../fetch/constants/constants";
 import { useFetch } from "../fetch/hooks/useFetch";
 
-export function Credit_Cards(props) {
+export function Credit_Cards() {
   const {
     data: credit_card,
     loading,
+    error,
     refetch: newCreditCard,
   } = useFetch(ENDPOINT.CREDIT_CARDS);
+  if (error) return error;
   if (loading) return "Caricamento...";
   return (
     <div>
