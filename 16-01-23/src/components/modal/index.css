@@ -1,0 +1,17 @@
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(53, 53, 53, 0.5);
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content img {
+  background-color: aqua;
+  border-radius: 50%;
+}

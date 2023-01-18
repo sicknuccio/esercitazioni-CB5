@@ -1,11 +1,13 @@
-export function Friend({ friend }) {
+import "./index.css";
+
+export function Friend({ friend, onClickedFriend }) {
+  const onHandleClick = (e) => {
+    onClickedFriend(e.target.src);
+  };
   return (
     <div className="Friend">
-      <img src={friend.image} alt="" />
-      <div className="Friend_Text">
-        <p>{friend.firstName}</p>
-        <p>{friend.address.city}</p>
-      </div>
+      <img src={friend.image} alt="" onClick={onHandleClick} />
+      <div className="Friend_Text"></div>
     </div>
   );
 }

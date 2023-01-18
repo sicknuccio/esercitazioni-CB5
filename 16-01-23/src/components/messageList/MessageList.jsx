@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { GET } from "../../utils/http";
 import Message from "../message/Message";
 
+import "./index.css";
+
 export default function MessageList(props) {
   const [posts, setPosts] = useState([]);
   const [filteredPosts, setFilteredPosts] = useState([]);
-
-  // const [titleText, setTitleText] = useState("");
 
   useEffect(() => {
     GET("posts").then(({ posts }) => {
