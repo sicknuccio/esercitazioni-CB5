@@ -22,8 +22,9 @@ export function Message({ post }) {
           </h4>
           <p className="Message_Text-Profile-Username">@{user.username}</p>
         </div>
-        {/* <h3>{post.title}</h3> */}
+
         <p>{post.body}</p>
+        <hr />
       </div>
     </div>
   );

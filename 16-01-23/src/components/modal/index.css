@@ -1,17 +1,47 @@
 .Modal {
   position: fixed;
+  z-index: 15;
+}
+
+.content {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 16;
+}
+.content img {
+  background-color: rgba(252, 252, 252);
+  border-radius: 50%;
+  animation: appearContent 1s;
+}
+
+.overlay {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(53, 53, 53, 0.5);
-  z-index: 15;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(53, 53, 53, 0.7);
+  animation: appear 1s;
 }
 
-.content img {
-  background-color: aqua;
-  border-radius: 50%;
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appearContent {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

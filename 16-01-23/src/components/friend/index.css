@@ -1,5 +1,7 @@
 .Friend {
   transition: transform 0.3s;
+  background-color: rgba(252, 252, 252, 0.603);
+  border-radius: 50%;
 }
 
 .Friend:hover {
