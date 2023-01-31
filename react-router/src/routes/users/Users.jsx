@@ -15,11 +15,22 @@ export function Users() {
     });
   }, []);
 
+  if (Object.keys(user).length === 0) return <p>Caricamento</p>;
   return (
-    <div>
-      <p>{user.firstName}</p>
-      <p>{user.lastName}</p>
-      <p>{user.age}</p>
-    </div>
+    <>
+      <div className={styles.main}>
+        <div className={styles.card}>
+          <div className={styles.avatar_container}>
+            <img src={user.image} alt="" />
+          </div>
+          <h2>
+            {console.log(user)}
+            {user.firstName} {user.lastName}
+          </h2>
+          {console.log(user)}
+          <p>Address: {user.address.address}</p>
+        </div>
+      </div>
+    </>
   );
 }

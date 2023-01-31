@@ -14,6 +14,13 @@ function App() {
       >
         Visualizza utenti
       </button>
+      <button
+        onClick={() => {
+          navigate("/posts");
+        }}
+      >
+        Visualizza posts
+      </button>
     </div>
   );
 }
