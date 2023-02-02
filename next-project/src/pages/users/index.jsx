@@ -1,7 +1,6 @@
 import { GET } from "@/http/http";
 
 export default function Users({ users }) {
-  console.log(users);
   return (
     <div>
       <h1>Pagina users</h1>

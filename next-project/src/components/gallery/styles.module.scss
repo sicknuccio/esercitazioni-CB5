@@ -1,0 +1,25 @@
+.main {
+  // display: flex;
+  // justify-content: center;
+  position: relative;
+  width: 1280px;
+  .prev {
+    position: absolute;
+    padding: 10px;
+    left: 0;
+    top: 45%;
+  }
+  .next {
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    top: 45%;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    gap: 20px;
+    width: 1280px;
+  }
+}
